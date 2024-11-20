@@ -1,0 +1,13 @@
+<project name="MyProject" default="compile" basedir=".">
+    <target name="init">
+        <mkdir dir="build" />
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="src" destdir="build" includeantruntime="false" />
+    </target>
+
+    <target name="clean">
+        <delete dir="build" />
+    </target>
+</project>
